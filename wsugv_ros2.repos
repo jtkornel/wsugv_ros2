@@ -1,0 +1,10 @@
+repositories:
+    wsugv_bringup:
+        type: git
+        url: git@github.com:jtkornel/wsugv_bringup.git
+        version: main
+    wsugv_description:
+        type: git
+        url: git@github.com:jtkornel/wsugv_description.git
+        version: main
+
