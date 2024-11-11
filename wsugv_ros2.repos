@@ -7,4 +7,7 @@ repositories:
         type: git
         url: git@github.com:jtkornel/wsugv_description.git
         version: main
-
+    wsugv_protocol:
+        type: git
+        url: git@github.com:jtkornel/wsugv_protocol.git
+        version: main
