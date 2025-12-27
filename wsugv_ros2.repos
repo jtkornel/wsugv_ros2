@@ -15,3 +15,7 @@ repositories:
     type: git
     url: git@github.com:jtkornel/wsugv_protocol.git
     version: users/jtk/cmd_subscriber
+  rf2o_laser_odometry:
+    type: git
+    url: git@github.com:Adlink-ROS/rf2o_laser_odometry.git
+    version: humble-devel
