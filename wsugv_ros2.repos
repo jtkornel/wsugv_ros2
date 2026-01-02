@@ -19,3 +19,12 @@ repositories:
     type: git
     url: git@github.com:Adlink-ROS/rf2o_laser_odometry.git
     version: humble-devel
+# Legacy repos necessary for rf2o_laser_odometry
+  cmake_modules:
+    type: git
+    url: git@github.com:ros/cmake_modules.git
+    version: 0.5-devel
+  catkin:
+    type: git
+    url: git@github.com:ros/catkin.git
+    version: noetic-devel
