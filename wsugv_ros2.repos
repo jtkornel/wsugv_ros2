@@ -19,6 +19,15 @@ repositories:
     type: git
     url: git@github.com:Adlink-ROS/rf2o_laser_odometry.git
     version: humble-devel
+  eclipse-cyclonedds:
+    type: git
+    url: git@github.com:eclipse-cyclonedds/cyclonedds.git
+    version: releases/0.10.x
+  rmw-cyclonedds:
+    type: git
+    url: git@github.com:ros2/rmw_cyclonedds.git
+    version: humble
+
 # Legacy repos necessary for rf2o_laser_odometry
   cmake_modules:
     type: git
