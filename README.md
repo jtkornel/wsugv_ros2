@@ -14,3 +14,8 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
 * URDF robot description files for the modified Rover UGV with LIDAR: [wsugv_description package](https://github.com/jtkornel/wsugv_description).
 * Launch scripts for the robot itself and supporting remote node: [wsugv_bringup package](https://github.com/jtkornel/wsugv_bringup)
   * Includes bringup script for nav2 and remote operation intended to run on a more powerful supporting computer
+
+## Requirements
+* [Waveshare UGV Rover](https://www.waveshare.com/ugv-rover.htm) with installed Raspberry PI 4 or 5.
+* [RPLidar A1](https://www.slamtec.com/en/lidar/a1) connected to USB
+* An installation of [ROS 2 Humble](https://index.ros.org/doc/ros2/Installation/Humble/Linux-Install-Debians/) on the RPI and optionally a supporting computer for remote operation and navigation.
