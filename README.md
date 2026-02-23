@@ -1,5 +1,8 @@
+<img width="853" height="683" alt="modified_UGV_rover_rendering_overview" src="https://github.com/user-attachments/assets/c496e6e2-4724-4971-b511-cc092211025d" />
+
 # Modified Waveshare UGV Rover with ROS2 support
-This the top-level repository for a mobile robot based on the [Waveshare UGV Rover](https://www.waveshare.com/ugv-rover.htm), including some modifications to use the [RPLidar A1](https://www.slamtec.com/en/lidar/a1) for odometry and indoor navigation.
+
+This the ROS2 workspace repository for a mobile robot based on the [Waveshare UGV Rover](https://www.waveshare.com/ugv-rover.htm), including some modifications to use the [RPLidar A1](https://www.slamtec.com/en/lidar/a1) for odometry and indoor navigation.
 
 An important motivation for the project has been to use the UGV to automate photogrammetry image capture for environments and objects. This is work in progress, but the project has already much working functionality.
 
@@ -15,7 +18,8 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
 * Launch scripts for the robot itself and supporting remote node: [wsugv_bringup package](https://github.com/jtkornel/wsugv_bringup)
   * Includes bringup script for nav2 and remote operation intended to run on a more powerful supporting computer
 
-## Requirements
+## Requirements for use
 * [Waveshare UGV Rover](https://www.waveshare.com/ugv-rover.htm) with installed Raspberry PI 4 or 5.
 * [RPLidar A1](https://www.slamtec.com/en/lidar/a1) connected to USB
 * An installation of [ROS 2 Humble](https://index.ros.org/doc/ros2/Installation/Humble/Linux-Install-Debians/) on the RPI and optionally a supporting computer for remote operation and navigation.
+
