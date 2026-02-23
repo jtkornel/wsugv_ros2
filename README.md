@@ -11,6 +11,7 @@ The project encompasses a [ROS2 driver](https://github.com/jtkornel/wsugv_protoc
 NOTE: This is an independent open-source project, not officially endorsed or supported by Waveshare.
 
 ## Status
+### Completed
 * Communication with UGV Rover base unit for controlling the motors and reading sensor data: [wsugv_protocol package](https://github.com/jtkornel/wsugv_protocol).
   * `/cmd_vel` high-level control messages for rotation and velocity. The base units runs a differential drive controller for the wheels.
   * `/imu` for accelerometer data and `joint_states` for the wheel position feedback.
@@ -18,6 +19,15 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
   * This allows visualizing the robot in RViz when operating (with a simplified geometry).
 * Launch scripts for the robot itself and supporting remote node: [wsugv_bringup package](https://github.com/jtkornel/wsugv_bringup)
   * Includes bringup script for nav2 and remote operation intended to run on a more powerful supporting computer
+  * Brings up lidar-based odometry for now
+* Workspace bringing the parts together, with some convenience scripts for fetching dependencies and building (which is what you are looking at now).
+### To be done
+* Improved sensor fusion for odometry
+  * IMU calibration. The default setup gives a lot of drift which is probably not unexpected. Both the on-chip calibration or some external toolbox could be options.
+  * Odometry from wheels
+  * Configuration of robot-localization toolbox for fusion
+* Nav2 behaviour tree for image capture ?
+* Some collision sensors closer to ground-level than the LIDAR
 
 ## Requirements for use
 * [Waveshare UGV Rover](https://www.waveshare.com/ugv-rover.htm) with installed Raspberry PI 4 or 5.
@@ -39,4 +49,5 @@ For subsequent sessions the last step is sufficent to use the packages:
 ```
 source setup_env.sh
 ```
+
 
