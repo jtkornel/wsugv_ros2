@@ -14,7 +14,8 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
 * Communication with UGV Rover base unit for controlling the motors and reading sensor data: [wsugv_protocol package](https://github.com/jtkornel/wsugv_protocol).
   * `/cmd_vel` high-level control messages for rotation and velocity. The base units runs a differential drive controller for the wheels.
   * `/imu` for accelerometer data and `joint_states` for the wheel position feedback.
-* URDF robot description files for the modified Rover UGV with LIDAR: [wsugv_description package](https://github.com/jtkornel/wsugv_description).
+* URDF robot description files for the modified Rover UGV with RPLidar A1 and custom mounting plate: [wsugv_description package](https://github.com/jtkornel/wsugv_description).
+  * This allows visualizing the robot in RViz when operating (with a simplified geometry).
 * Launch scripts for the robot itself and supporting remote node: [wsugv_bringup package](https://github.com/jtkornel/wsugv_bringup)
   * Includes bringup script for nav2 and remote operation intended to run on a more powerful supporting computer
 
@@ -38,3 +39,4 @@ For subsequent sessions the last step is sufficent to use the packages:
 ```
 source setup_env.sh
 ```
+
