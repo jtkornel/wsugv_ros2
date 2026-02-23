@@ -21,7 +21,7 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
   * Includes bringup script for nav2 and remote operation intended to run on a more powerful supporting computer
   * Brings up lidar-based odometry for now
 * Workspace bringing the parts together, with some convenience scripts for fetching dependencies and building (which is what you are looking at now).
-* [Lidar mounting plate](https://github.com/jtkornel/wsugv_ros2/blob/jtkornel-cad-model-work/cad_models/UGV_Rover_lidar_mounting_plate.step) which can be 3D printed.
+* [Lidar mounting plate](https://github.com/jtkornel/wsugv_ros2/blob/main/cad_models/UGV_Rover_lidar_mounting_plate.step) which can be 3D printed.
 ### To be done
 * Improved sensor fusion for odometry
   * IMU calibration. The default setup gives a lot of drift which is probably not unexpected. Both the on-chip calibration or some external toolbox could be options.
@@ -34,7 +34,7 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
 
 ## Requirements for use
 * [Waveshare UGV Rover](https://www.waveshare.com/ugv-rover.htm) with installed Raspberry PI 4 or 5.
-* [RPLidar A1](https://www.slamtec.com/en/lidar/a1) connected to USB and mounted to the UGV like shown in the image above. Here is a [CAD model](https://github.com/jtkornel/wsugv_ros2/blob/jtkornel-cad-model-work/cad_models/UGV_Rover_lidar_mounting_plate.step) for a custom mounting plate you may use, as the original mounting plate provided with the Rover does not fit this lidar unit.
+* [RPLidar A1](https://www.slamtec.com/en/lidar/a1) connected to USB and mounted to the UGV like shown in the image above. Here is a [CAD model](https://github.com/jtkornel/wsugv_ros2/blob/main/cad_models/UGV_Rover_lidar_mounting_plate.step) for a custom mounting plate you may use, as the original mounting plate provided with the Rover does not fit this lidar unit.
 * An installation of [ROS 2 Humble](https://index.ros.org/doc/ros2/Installation/Humble/Linux-Install-Debians/) on the RPI and optionally installed on a supporting computer for remote operation and navigation. The RPI and supporting computer must be connected to the same local network (for ROS2 DDS network traffic).
 
 ## Building and installing
@@ -52,6 +52,7 @@ For subsequent sessions the last step is sufficent to use the packages:
 ```
 source setup_env.sh
 ```
+
 
 
 
