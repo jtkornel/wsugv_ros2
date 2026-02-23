@@ -27,7 +27,9 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
   * IMU calibration. The default setup gives a lot of drift which is probably not unexpected. Both the on-chip calibration or some external toolbox could be options.
   * Odometry from wheels
   * Configuration of robot-localization toolbox for fusion
+* Further configuration and tuning of the Nav2 stack
 * Nav2 behaviour tree for image capture ?
+* A better camera and possibly some calibration of it
 * Some collision sensors closer to ground-level than the LIDAR
 
 ## Requirements for use
@@ -50,6 +52,7 @@ For subsequent sessions the last step is sufficent to use the packages:
 ```
 source setup_env.sh
 ```
+
 
 
 
