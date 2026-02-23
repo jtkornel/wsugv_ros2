@@ -21,6 +21,20 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
 ## Requirements for use
 * [Waveshare UGV Rover](https://www.waveshare.com/ugv-rover.htm) with installed Raspberry PI 4 or 5.
 * [RPLidar A1](https://www.slamtec.com/en/lidar/a1) connected to USB and mounted to the UGV like shown in the image above. Here is a [CAD model](https://github.com/jtkornel/wsugv_ros2/blob/jtkornel-cad-model-work/cad_models/UGV_Rover_lidar_mounting_plate.step) for a custom mounting plate you may use, as the original mounting plate provided with the Rover does not fit this lidar unit.
-* An installation of [ROS 2 Humble](https://index.ros.org/doc/ros2/Installation/Humble/Linux-Install-Debians/) on the RPI and optionally a supporting computer for remote operation and navigation.
+* An installation of [ROS 2 Humble](https://index.ros.org/doc/ros2/Installation/Humble/Linux-Install-Debians/) on the RPI and optionally installed on a supporting computer for remote operation and navigation. The RPI and supporting computer must be connected to the same local network (for ROS2 DDS network traffic).
 
+## Building and installing
 
+After you have cloned this repository, you can download and build dependencies using the provided scripts:
+```
+source /opt/ros/humble/setup.bash
+# Clones dependent repos from wsugv_ros2.repos and installs dependencies
+./install_all.sh
+./build_all.sh
+source setup_env.sh
+```
+
+For subsequent sessions the last step is sufficent to use the packages:
+```
+source setup_env.sh
+```
