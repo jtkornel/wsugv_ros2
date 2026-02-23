@@ -21,6 +21,7 @@ NOTE: This is an independent open-source project, not officially endorsed or sup
   * Includes bringup script for nav2 and remote operation intended to run on a more powerful supporting computer
   * Brings up lidar-based odometry for now
 * Workspace bringing the parts together, with some convenience scripts for fetching dependencies and building (which is what you are looking at now).
+* [Lidar mounting plate](https://github.com/jtkornel/wsugv_ros2/blob/jtkornel-cad-model-work/cad_models/UGV_Rover_lidar_mounting_plate.step) which can be 3D printed.
 ### To be done
 * Improved sensor fusion for odometry
   * IMU calibration. The default setup gives a lot of drift which is probably not unexpected. Both the on-chip calibration or some external toolbox could be options.
@@ -49,5 +50,6 @@ For subsequent sessions the last step is sufficent to use the packages:
 ```
 source setup_env.sh
 ```
+
 
 
